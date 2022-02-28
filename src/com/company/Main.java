@@ -7,8 +7,6 @@ public class Main {
 
     final int ALFABETMÆNGDE = 28;
 
-    int alfabetTal = 0;
-
     public int bogstaverTilTal(char inputBogstav){
         //Går igennem alle bogstaver indtil den finder hvilket tal passer til et char i alfabet Arrayet.
         for (int i = 0;ALFABETMÆNGDE >= i; i++ ){
@@ -20,6 +18,7 @@ public class Main {
         }
         return 404;
     }
+
     public char taltilBogstaver(int inputTal) {
         //Spørger efter et char med det int fra input.
              char result = alfabet[inputTal];
@@ -29,6 +28,6 @@ public class Main {
     public static void main(String[] args) {
         Main obj = new Main();
         System.out.println(obj.bogstaverTilTal('C'));
-        System.out.println(obj.taltilBogstaver(19));
+        System.out.println(obj.taltilBogstaver(0));
     }
 }
