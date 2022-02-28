@@ -20,14 +20,15 @@ public class Main {
         }
         return 404;
     }
-    public void taltilBogstaver(){
-
-    }
+    public char taltilBogstaver(int inputTal) {
+        //Spørger efter et char med det int fra input.
+             char result = alfabet[inputTal];
+             return result;
+            }
 
     public static void main(String[] args) {
         Main obj = new Main();
         System.out.println(obj.bogstaverTilTal('C'));
-
-
+        System.out.println(obj.taltilBogstaver(19));
     }
 }
